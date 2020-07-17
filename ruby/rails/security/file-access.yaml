@@ -1,0 +1,7 @@
+rules:
+- id: ruby-file-linking
+  patterns:
+    - pattern: File.link(...)
+  message: Potential linking normally unreachable file to a reachable location
+  languages: [ruby]
+  severity: WARNING
